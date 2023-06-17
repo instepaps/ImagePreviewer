@@ -1,0 +1,39 @@
+﻿<Window x:Class="ImagePreviewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImagePreviewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Name="i1" Grid.Row="0" Grid.Column="0" Source="c:/temp/Images/1.jpg" />
+        <Image Name="i2" Grid.Row="1" Grid.Column="0" Source="c:/temp/Images/2.jpg" />
+        <Image Name="i3" Grid.Row="2" Grid.Column="0" Source="c:/temp/Images/3.jpg" />
+        <Image Name="i4" Grid.Row="3" Grid.Column="0" Source="c:/temp/Images/4.jpg" />
+        <Image Name="i5" Grid.Row="0" Grid.Column="1" Source="c:/temp/Images/1.jpg" />
+        <Image Name="i6" Grid.Row="1" Grid.Column="1" Source="c:/temp/Images/2.jpg" />
+        <Image Name="i7" Grid.Row="2" Grid.Column="1" Source="c:/temp/Images/3.jpg" />
+        <Image Name="i8" Grid.Row="3" Grid.Column="1" Source="c:/temp/Images/4.jpg" />
+        <Image Name="i9" Grid.Row="0" Grid.Column="2" Source="c:/temp/Images/1.jpg" />
+        <Image Name="i10" Grid.Row="1" Grid.Column="2" Source="c:/temp/Images/1.png" />
+        <Image Name="i11" Grid.Row="2" Grid.Column="2" Source="c:/temp/Images/2.png" />
+        <Image Name="i12" Grid.Row="3" Grid.Column="2" Source="c:/temp/Images/1.bmp" />
+        <TextBox Name="tbImageFiles" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <TextBox Name="tbImageFiles2" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Button Name="btnGetFiles" Grid.Row="3" Grid.Column="3" Height="40" Width="150" Content="GetFiles" Click="btnGetFiles_Click" FontWeight="Bold" />
+    </Grid>
+</Window>
